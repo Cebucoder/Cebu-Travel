@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link support for Wepbage design CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="../images/logo-icon2.png"/>
+    
+    <link rel="stylesheet" type="text/css" href="../css/fort-style.css">
+    <title>Malapascua Island</title>
+
+    <style type="text/css">
+
+        .fort-container{
+            background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7))
+             ,url(https://gttp.imgix.net/224593/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-3.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);
+        }
+        #best-restu{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            text-align: left;
+            justify-content: center;
+        }
+        #best-restu p{
+            width: 80%;
+        }
+        #best-restu b{
+            font-size: 20px;
+        }
+        li{
+            font-family:'Poppins',sans-serif;
+            padding: 5px;
+        }
+        .comment-cont{
+            background: #fff;
+        }
+        .commentsection{
+            background: #fff;
+        }
+        .commentsection label{
+            color: #000;
+        }
+        .inputbox button{
+            background: #000;
+            color: #fff;
+        }
+        .navlink{
+            padding-top: 15px;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!------ nav START ------->
+        <div class="nav">
+
+            <!------ bars START ------->  
+            <div class="bars" onclick="openNav()">
+               <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+            
+            <!------ bars END ------->
+
+          <!------ logo START ------->
+            <div class="logo">
+               <a href="#home"><img src="../images/logo.png" alt="" onclick="play()"></a>
+            </div>
+            <!------ logo END ------->   
+
+            <!------ navlinks START ------->
+            <div class="navlink" id="nav">
+                <div class="close" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul>
+                     <li><a href="../html/index.html#home">Home</a></li>
+                    <li><a href="../html/index.html#food">Food</a></li>
+                    <li><a href="../html/index.html#tourist">Tourist Spot</a></li>
+                    <li class="active"><a href="../html/index.html#hotel">Book Now</a></li>
+                </ul>
+            </div>
+            <!------ navlinks END ------->
+
+        </div>
+        <!------ nav END ------->
+        
+    </div>
+
+    <div class="fort-container">
+
+        <!------ welcome-text START ------->
+        <div class="welcome-text" id="welcome">
+            <h1>MALAPASCUA ISLAND</h1>
+            <a href="#about">
+                <button>Explore Now</button>
+            </a>
+        </div>
+        <!------ welcome-text END ------->
+        
+    </div>
+
+    <div class="about" id="about">
+        <h1>About Malapascua Island</h1>
+
+        <div class="about-content1">
+            <img src="https://gttp.imgix.net/224592/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-2.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+            <p><b>Malapascua Island Cebu Travel</b><br><br>Explore Cebu's Malapascua Island, known for being a diving destination where you can swim with thresher sharks, making it one of the top Visayas tourist spots. Find out about the best time to visit, how to go, where to stay, other top attractions, and local food you shouldn't miss in this guide.</p>
+        </div>
+
+        <div class="about-content2">
+            <img src="https://gttp.imgix.net/224627/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-1.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+            <p><b>What Is Malapascua Famous  For</b><br><br>Even though most people visit Malapascua Island to dive and see the thresher sharks and other marine life, its small island culture, smaller crowds, and the long stretch of white-sand beaches are what makes travelers come back for more. </p>
+        </div>
+
+        <div class="about-content3">
+            <img src="https://gttp.imgix.net/224593/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-3.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+            <p><b>How Wide Is Malapascua</b><br><br>With a length of 2.5 kilometers and a width of 1 kilometer, you can explore the whole island in less than 2 hours, depending on how long it takes for you to marvel at its many tourist spots and activities.</p>
+        </div>
+
+
+        <div class="about-content4">
+            <h1>What Is In Malapascua </h1>
+
+            <div class="inside-cont">
+
+                <div class="inside">
+                <img src="https://gttp.imgix.net/224595/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-6.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" onclick="img1()">
+                </div>
+
+                <div class="inside">
+                <img src="https://gttp.imgix.net/224665/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-9.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" onclick="img2()">
+                </div>
+
+                <div class="inside">
+                <img src="https://www.travelingcebu.com/images/scuba-diving-corals-fish-two-divers.jpg" onclick="img3()">
+                </div>
+
+                <div class="inside">
+                <img src="https://static.toiimg.com/photo/imgsize-950833,msid-59945015/59945015.jpg" onclick="img4()">
+                </div>
+
+                <div class="inside">
+                <img src="https://www.e-philippines.com.ph/wp-content/uploads/2020/07/Malapascua-Tour-Package-Budget.jpg" onclick="img5()">
+                </div>
+
+                <div class="inside">
+                <img src="https://www.philippinebeaches.org/wp-content/uploads/2017/02/Ocean-Vida.jpg" onclick="img6()">
+                </div>
+
+                <div class="inside">
+                <img src="https://media.istockphoto.com/id/1213315764/photo/kalanggaman-island-malapascua-the-philippines-aerial-photograph.jpg?s=612x612&w=0&k=20&c=IdXSWCRUm0hjD8EATyVAcRpBIOCpRY4ZzLZqdbV_a6A=" onclick="img7()">
+                </div>
+
+                <div class="inside">
+                <img src="http://scubadiverlife.com/wp-content/uploads/2014/05/Dollarphotoclub_14086284.jpg" onclick="img8()">
+                </div>
+
+                <div class="inside">
+                <img src="http://1.bp.blogspot.com/-dNZfUbFQrY0/U6LKUAvysqI/AAAAAAAAOI4/fjgZm0xmY-8/s1600/beachelor+-+malapascua+legend+resort.jpg" onclick="img9()">
+                </div>
+
+
+                <div class="view-cont" id="view" onclick="closecont()">
+
+                    <div class="view">
+
+                        <div class="close" onclick="closecont()">
+                            <i class="fa-solid fa-close"></i>
+                        </div>
+
+                        <img src="https://gttp.imgix.net/224595/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-6.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" id="malapascua">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="about-content5">
+            <h1>How To Get There</h1>
+            <p>The easiest and fastest way to get to Malapascua Island is to fly to Cebu directly through the Mactan-Cebu International Airport, which is located in Lapu-Lapu City just outside Cebu City.
+
+                        <br>
+                <br>From there, you can ride a private vehicle or board a public bus to New Maya Port. Travel time from Cebu City to New Maya Port is around 4 hours. From there, you can hop on a boat going to Malapascua Island. The boat ride is between 30 minutes and 1 hour long.</p>
+        </div>
+        <div class="about-content6">
+            <h1 style="padding-bottom: 20px;">What to See and Do in Malapascua Island </h1>
+            
+                <img src="https://gttp.imgix.net/226244/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-15.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" style="width: 75%">
+                <p><b>Explore Malapascua Island's Diving Spots</b> <br>
+                <br>Malapascua Island is more than just the home of the thresher sharks. It has something for any type of traveler, even foodies! Here are the amazing things you can do on the island that will make you come back for more. <br><br>The thresher sharks swim every morning to Monad Shoal, the most popular dive spot on Malapascua Island, for a natural cleaning session with the wrasse, a type of cleaner fish.
+                <br><br>Diving rules are strictly enforced to make sure it’s safe for everyone, including the sharks. Take note that diving to Monad Shoal to see the thresher sharks is open only to divers with at least an Advanced Open Water Diver license.</p>
+                <img src="https://gttp.imgix.net/224719/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-16.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" style="width: 75%">
+        </div>
+
+
+
+        <!-- <div class="about-content7">
+            <h1>Tourist Spots Nearby</h1>
+            
+                <li>Magellan’s Cross & Basilica del Santo Niño</li>
+                <li>Magellan’s Park</li>
+                <li>Fort San Pedro</li>
+                <li>Cebu Metropolitan Cathedral</li>
+                <li>Fuente Osmeña Circle & Crown Regency Sky Adventure </li>
+                <li>Taboan Public Market</li>
+            
+        </div> -->
+
+        <div class="restu">
+            <h1>What to Eat and Drink in Malapascua Island</h1>
+
+            <div class="about-content8">
+
+                <img src="https://gttp.imgix.net/198960/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-20.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883">
+
+                
+                    <p>When you’re vacationing on an island, take advantage of the fresh seafood you can find. But sometimes, all you really need is some pizza after a tiring day of exploring. Apart from glorious seafood dishes, Malapascua Island has all the comfort foods you need from various cuisines.<br>
+                    <br>When it comes to local delights, danggit (salted and dried rabbitfish) is a pride of Malapascua. It’s crispy, salty, and best eaten dipped in vinegar or some atchara (pickled papaya) during breakfast with some eggs and fried rice. </p>
+            </div> 
+
+            <div class="about-content8" id="best-restu">
+
+                   <p><b>Recommended Best Restaurants and Bars </b></p>
+                   <p>Here are some of the highly recommended places to eat in Malapascua Island and the must-order dishes and drinks. </p>
+                   <p><b>La Isla Bonita </b></p>
+                   <p>Touted as the best restaurant on the island. It serves a lot of Cebuano and Filipino dishes but you might be surprised to find some German comfort food on their menu. La Isla Bonita is well embraced also because of its vegetarian and vegan offerings.</p>
+                   <p><b>The Craic House</b></p>
+                   <p>Pub lovers should check out cocktails, beer, and pub eats here. Good for large groups, they have Mezze and Tex-Mex platters and the serving here is huge!</p>
+                   <p><b>Ging-Ging’s Restaurant and Food Garden</b></p>
+                   <p>After a night of drinking, you can grab some breakfast here. They have comfort food favorites and salad served with fresh fruits like mangoes and bananas.</p>
+                  <!--  <p><b>Recommended Best Restaurants and Bars </b></p>
+                   <p>Here are some of the highly recommended places to eat in Malapascua Island and the must-order dishes and drinks. </p> -->
+            </div>
+
+            <div class="about-content8" id="best-restu">
+                <h1>Practical Information and Tips</h1>
+
+                   <p><b>Currency</b></p>
+                   <p>While some hotels, restaurants, and commercial establishments accept credit cards, it’s still best to bring enough cash in Philippine Peso (PHP) with you. There are no ATMs in Malapascua Island. Better withdraw enough cash before you board the boat from New Maya Port.</p>
+                   <p><b>Internet</b></p>
+                   <p>The internet connection on the island is poor. Hey, you’re in a tropical paradise, put the screen down and enjoy the sun, sea, and breeze. But if you really need Wi-Fi access, it's good to know that most hotels and big commercial establishments have it.</p>
+                   <p><b>Drinking Water</b></p>
+                   <p>While many locals drink the tap water, it can be a bit salty for travelers. Most hotels provide their guests with access to purified water through a dispenser. While you can always buy bottled drinking water, you can also bring your own water bottle and just refill to avoid unnecessary plastic waste.</p>
+                   <p><b>Electricity</b></p>
+                   <p>The entire island gets power from a small electrical plant. There are no cables from the city so you might experience power interruptions from time to time. But don’t worry, some establishments and hotels have their own backup generators.
+                    <br>
+                    While there are street lamps around the island, they’re quite faint and some areas do not have one. Better bring a flashlight or headlamp with you if you’re planning to walk around the island at night.</p>
+                   <p><b>Food Stores</b></p>
+                   <p>There are a few small stores on the island selling snacks. Nothing fancy or expensive, just a few local chips and candy. If you have dietary restrictions, a picky eater, or you want to munch on something, better get your snacks from the city.</p>
+
+
+            </div>      
+             <div class="about-content8" id="best-restu">
+                <h1 style="padding-bottom:20px">Sample Itinerary in Malapascua Island</h1>
+                <img src="https://gttp.imgix.net/224706/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-21.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" style="width:60%">
+
+                   <p>Certified divers stay in Malapascua for longer days since diving tours are best when not rushed. Malapascua Island is often a day tour destination when exploring Cebu or nearby Kalanggaman Island in Leyte for non-professional divers.<br><br>
+
+                    If you’re one of those who just want to experience Malapascua Island’s beaches, it’s best to stay for at least 2 days. Here’s a sample 2 days and 1-night itinerary to make the most of what the island has to offer.</p>
+
+                    <p><b>Day 1: Arrival + Beaches</b></p>
+                   <ul>
+                       <li>06:00 AM - Departure from Cebu City to New Maya Port </li>
+                       <li>11:00 AM - Boat ride going to Malapascua Island</li>
+                       <li>11:30 AM - Arrival at Malapascua Island </li>
+                       <li>12:00 NN - Lunch then check-in at the hotel/resort</li>
+                       <li>02:00 PM - Explore the beaches</li>
+                       <li>06:00 PM - Dinner</li>
+
+                   </ul>
+
+                   <p><b>Day 2: Beaches + Snorkeling + Departure</b></p>
+                   <ul>
+                       <li>06:00 AM - Breakfast</li>
+                       <li>07:00 AM - Explore more of the beaches and go snorkeling</li>
+                       <li>10:00 AM - Back to hotel/resort</li>
+                       <li>12:00 NN - Hotel checkout then lunch</li>
+                       <li>02:00 PM - Travel to New Maya Port </li>
+                       <li>02:30 PM - Boat ride back to Cebu</li>
+                       <li>03:15 PM - ETD to Cebu City</li>
+
+                   </ul>
+                   
+            </div>           
+                
+        </div>
+        <br>
+        <hr> 
+
+        <div class="comment-cont">
+        <form action="" method="" class="commentsection">
+            <label>Send Message To Us</label>
+            <div class="inputbox">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="email" placeholder="Surename" required>
+                <textarea placeholder="Comment here.."></textarea>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>  
+
+        <div class="fort-map">
+            <h1>Malapascua Location</h1>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12265.647153019177!2d124.10535137754411!3d11.337106521079761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a7de60aa76852f%3A0xe9237836540d3363!2sMalapascua%20Island!5e1!3m2!1sen!2sph!4v1668487190368!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    </div>
+
+<audio id="audio" src="../music/bossa.mp3" autoplay="true" loop></audio>
+
+</body>
+<!-- menu bar function -->
+<script type="text/javascript">
+    
+    let hamburger = document.getElementById("nav");
+
+    function openNav(){
+        hamburger.classList.add("nav-Open")
+    }
+    function closeNav(){
+        hamburger.classList.remove("nav-Open")
+    }
+
+</script>
+
+<!-- music backgreoun function -->
+
+<script type="text/javascript">
+    
+    function play(){
+
+     var music = new Audio('../music/bossa.mp3');
+     const song = document.querySelector('audio');
+
+     if (song.paused || song.ended) {
+     song.play();
+    }  else {
+    song.pause();
+    }
+  }
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+    malapascua
+
+function img1() {
+
+    document.getElementById("malapascua").src = "https://gttp.imgix.net/224595/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-6.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883";
+    view.classList.add("view-open")
+
+}
+function img2() {
+
+    document.getElementById("malapascua").src = "https://gttp.imgix.net/224665/x/0/malapascua-island-cebu-travel-guide-swim-with-thresher-sharks-9.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883";
+    view.classList.add("view-open")
+}
+function img3() {
+
+    document.getElementById("malapascua").src = "https://www.travelingcebu.com/images/scuba-diving-corals-fish-two-divers.jpg";
+    view.classList.add("view-open")
+}
+function img4() {
+
+    document.getElementById("malapascua").src = "https://static.toiimg.com/photo/imgsize-950833,msid-59945015/59945015.jpg";
+    view.classList.add("view-open")
+}malapascua
+function img5() {
+
+    document.getElementById("malapascua").src = "https://www.e-philippines.com.ph/wp-content/uploads/2020/07/Malapascua-Tour-Package-Budget.jpg";
+    view.classList.add("view-open")
+}
+function img6() {
+
+    document.getElementById("malapascua").src = "https://www.philippinebeaches.org/wp-content/uploads/2017/02/Ocean-Vida.jpg";
+    view.classList.add("view-open")
+}
+function img7() {
+
+    document.getElementById("malapascua").src = "https://media.istockphoto.com/id/1213315764/photo/kalanggaman-island-malapascua-the-philippines-aerial-photograph.jpg?s=612x612&w=0&k=20&c=IdXSWCRUm0hjD8EATyVAcRpBIOCpRY4ZzLZqdbV_a6A=";
+    view.classList.add("view-open")
+}
+function img8() {
+
+    document.getElementById("malapascua").src = "http://scubadiverlife.com/wp-content/uploads/2014/05/Dollarphotoclub_14086284.jpg";
+    view.classList.add("view-open")
+}
+function img9() {
+
+    document.getElementById("malapascua").src = "http://1.bp.blogspot.com/-dNZfUbFQrY0/U6LKUAvysqI/AAAAAAAAOI4/fjgZm0xmY-8/s1600/beachelor+-+malapascua+legend+resort.jpg";
+    view.classList.add("view-open")
+}
+
+
+//---- close the view port Start------//
+let close = document.getElementById("view");
+
+function closecont() {
+    close.classList.remove("view-open")
+}
+
+// ----close the view port end---//
+
+
+</script>
+
+</html>

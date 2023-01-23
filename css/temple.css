@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.temple-cont{
+	width: 100%;
+	height: 100vh;
+	background:linear-gradient(
+		rgb(0, 0, 0, 0.7),
+		rgb(0, 0, 0, 0.7)) 
+	,url(https://www.condonians.com/wp-content/uploads/2020/02/TempleOfLeah-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	font-family: 'montserrat',sans-serif;
+
+}
+.welcome-text h1{
+	padding-bottom: 20px;
+}
+.navlink ul{
+	padding-bottom: -20px;
+}

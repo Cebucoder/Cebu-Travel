@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link support for Wepbage design CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="../images/logo-icon2.png"/>
+    
+    <link rel="stylesheet" type="text/css" href="../css/fort-style.css">
+    <title>Magellan</title>
+
+    <style type="text/css">
+
+        .fort-container{
+            background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7))
+             ,url(https://www.zenrooms.com/blog/wp-content/uploads/2021/08/magellans-cross-cebu.jpg);
+        }
+        .view img{
+            width: 550px;
+            height: 400px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            position: relative;
+        }
+        .view-cont{
+            width: 550px;
+            height:400px;
+            overflow: hidden;
+            visibility: hidden;
+            position: absolute;
+            z-index: ;
+            background: #000;
+            transition: 0.4s;
+            opacity: 0;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            box-shadow: 0 0 90px 30px #000;
+
+        }
+        .view-open{
+            visibility: visible;
+            opacity: 1;
+            transform: rotate(0);
+            overflow-y: hidden;
+        }
+        .close{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            z-index: 3;
+            flex-direction: row;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+/*            right: 0;*/
+            margin: 5px;
+            transition: 0.3s;
+        }
+        .close:hover{
+            transform: scale(1.1);
+        }
+        .close i{
+            color: #fff;
+            font-size: 30px;
+        }
+        .navlink {
+            padding-top: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!------ nav START ------->
+        <div class="nav">
+
+            <!------ bars START ------->  
+            <div class="bars" onclick="openNav()">
+               <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+            
+            <!------ bars END ------->
+
+          <!------ logo START ------->
+            <div class="logo">
+               <a href="#home"><img src="../images/logo.png" alt="" onclick="play()"></a>
+            </div>
+            <!------ logo END ------->   
+
+            <!------ navlinks START ------->
+            <div class="navlink" id="nav">
+                <div class="close" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul>
+                     <li><a href="../html/index.html#home">Home</a></li>
+                    <li><a href="../html/index.html#food">Food</a></li>
+                    <li><a href="../html/index.html#tourist">Tourist Spot</a></li>
+                    <li class="active"><a href="../html/index.html#hotel">Book Now</a></li>
+                </ul>
+            </div>
+            <!------ navlinks END ------->
+
+        </div>
+        <!------ nav END ------->
+        
+    </div>
+
+    <div class="fort-container">
+
+        <!------ welcome-text START ------->
+        <div class="welcome-text" id="welcome">
+            <h1>WELCOME TO MAGELLAN CROSS</h1>
+            <a href="#about">
+                <button>Explore Now</button>
+            </a>
+        </div>
+        <!------ welcome-text END ------->
+        
+    </div>
+
+    <div class="about" id="about">
+        <h1>About Magellan Cross</h1>
+
+        <div class="about-content1">
+            <img src="https://sugbo.ph/wp-content/uploads/2021/01/Ferdinan-Magellan-plants-cross-in-cebu.jpg">
+            <p><b>MAGELLAN PLANTS THE CROSS IN CEBU</b><br><br>In order to celebrate the Roman Catholic faith’s propagation in the Philippines, Magellan planted a cross in Cebu. It was believed to have miraculous powers and therefore was constantly visited by the locals, some of them even chipping bits of the cross with the belief that it will heal them.</p>
+        </div>
+
+        <div class="about-content2">
+            <img src="https://en-academic.com/pictures/enwiki/77/Magellan_cross_1900.jpg">
+            <p><b>MAGELLAN’S CHAPEL, CEBU</b><br><br>Magellan’s cross still remains to be a part of the history of Cebu. This cross is believed to have been planted by the Spaniards and Portuguese conquerors, as ordered by Ferdinand Magellan, who came here in the Philippines in 1521. It also marked the arrival of Christianity in the Philippines.</p>
+        </div>
+
+        <div class="about-content3">
+            <img src="http://1.bp.blogspot.com/-scnzgkqjMEo/Trlp5V786sI/AAAAAAAARao/Ki8cOGy8jkA/s1600/image018.jpg">
+            <p><b>Magellan’s Cross</b><br><br>The Portuguese navigator Ferdinand Magellan led the first expedition to sail around the earth but never made it home, dying in Cebu. Today, a tall wooden cross known as Magellan’s Cross (Cruz de Magallanes) commemorates his memory</p>
+        </div>
+
+        <div class="about-content3">
+            <img src="https://sugbo.ph/wp-content/uploads/2021/01/Ferdinan-Magellan-Cross-Cebu-City.jpg">
+            <p><b>FERDINAND MAGELLAN’S ARRIVAL</b><br><br>Ferdinand Magellan was the first European to step foot in the Philippines in the year 1521. He was a Portuguese sailor who worked for the King of Spain with the ultimate goal of finding the Spice Islands, currently known as Moluccas Islands in Indonesia.</p>
+        </div>
+
+        <div class="about-content4">
+            <h1>Inside Magellan Cross </h1>
+
+            <div class="inside-cont">
+
+                <div class="inside" onclick="img1()">
+                <img src="https://www.zenrooms.com/blog/wp-content/uploads/2021/08/magellans-cross-cebu.jpg">
+                </div>
+
+                <div class="inside" onclick="img2()">
+                <img src="https://www.freedomwall.net/files/2014/12/Shrine-of-Magellans-Cross.jpg">
+                </div>
+
+                <div class="inside" onclick="img3()">
+                <img src="https://www.kellscraft.com/WomansJourneyPhilippines/P1243248.JPG">
+                </div>
+
+                <div class="inside" onclick="img4()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/20170812160609%21Magellan%27s_Cross_historical_marker.jpg">
+                </div>
+
+                <div class="inside" onclick="img5()">
+                <img src="https://cdn.theculturetrip.com/wp-content/uploads/2018/01/5753841923_87b7e25a25_b.jpg">
+                </div>
+
+                <div class="inside" onclick="img6()">
+                <img src="https://gohighbrow.com/wp-content/uploads/2016/04/5_0.jpg">
+                </div>
+
+                <div class="inside" onclick="img7()">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZTacVqkqWHk1jwWuieua0OKBj2lF8YdQPw&usqp=CAU">
+                </div>
+
+                <div class="inside" onclick="img8()">
+                <img src="https://media.istockphoto.com/id/1388166062/photo/magellans-cross-pavilion-in-plaza-sugbo-beside-the-basilica-del-santo-ni%C3%B1o.jpg?s=612x612&w=0&k=20&c=UuJp3Z8wOLBWX0ugCdHMHGshFQNrSTrrzFaqqltJEaQ=">
+                </div>
+
+                <div class="inside" onclick="img9()">
+                <img src="https://i.ebayimg.com/images/g/xdYAAOSwGzRhkSAG/s-l500.jpg">
+                </div>
+            </div>
+
+            <!-- view picture -->
+
+            <div class="view-cont" id="view" onclick="closecont()">
+
+                <div class="view">
+
+                    <div class="close" onclick="closecont()">
+                        <i class="fa-solid fa-close"></i>
+                    </div>
+
+                    <img src="https://www.zenrooms.com/blog/wp-content/uploads/2021/08/magellans-cross-cebu.jpg" id="magellan">
+                </div>
+
+            </div>  
+
+            <!-- view picture  end-->
+
+        </div>
+
+        <div class="about-content5">
+            <h1>How To Get There</h1>
+            <p>If you are coming in from the Mactan Cebu International Airport, the most convenient way is to ride a taxi or grab car going to the Magellan’s Cross. Fare is around P200-P300 and takes around 30-40 minutes depending on the traffic. 
+
+                        <br>
+                <br>But if you are from the Cebu City pier (which is quite near to Cebu City Hall), taxi fare will be around P70-P100 and travel time is around 5-10 minutes.</p>
+        </div>
+        <div class="about-content6">
+            <h1>Rates and Other Information in Visiting</h1>
+            <p>Magellan Cross is free for everyone no entrance fee needed <br>
+                <br>Fort San Pedro opening hours: Any time you can visit magellan cross
+                <br>Make sure to bring water and, ware proper ittire because beside of Magellan Cross is Basilica Minore del Santo Niño de Cebu, if you want to go visit there there is no problem when you ware a proper attire</p>
+        </div>
+
+        <div class="about-content7">
+            <h1>Tourist Spots Nearby</h1>
+            
+                <li>Magellan’s Cross & Basilica del Santo Niño</li>
+                <li>Magellan’s Park</li>
+                <li>Fort San Pedro</li>
+                <li>Cebu Metropolitan Cathedral</li>
+                <li>Fuente Osmeña Circle & Crown Regency Sky Adventure </li>
+                <li>Taboan Public Market</li>
+            
+        </div>
+
+        <div class="restu">
+            <h1>Where To Eat Near Magellan Cross</h1>
+
+            <div class="about-content8">
+
+                <img src="https://sugbo.ph/wp-content/uploads/2021/12/1Lechon.jpg">
+
+                
+                    <p><b>Magellan's Lechon</b><br><br>Magellan's Lechon is a perfect place to have a chill drink with a view. It’s near the magellan cross so in case your tour ends a little late, go straight here.
+                        <br>
+                        <br>
+                        <b>Address:</b>  18 Sikatuna St, Cebu City, Cebu
+                        <br>
+                        <br>
+                        <b>Operation hours:</b> 10AM - 8PM
+                        <br>
+                        <br>
+                        <b>Budget:</b> PHP 200
+                    </p>
+            </div>        
+                
+       
+
+            <div class="about-content8">
+
+                <img src="https://4.bp.blogspot.com/-B4xk38mDGLU/XDoCqTOChjI/AAAAAAAAjwg/nqtB7gCEIM0xMBGYbPA0DS3QI_RgcjV5wCK4BGAYYCw/s500/WhatsApp%2BImage%2B2019-01-12%2Bat%2B8.35.36%2BPM.jpeg">
+
+                <p><b>Patmon's Eatery</b><br><br>Another good place to eat near the magellan Cross is Patmon's Eatery. they serve grilled meat and seafood to delight you after a tiring trip.
+                        <br>
+                        <br>
+                        <b>Address:</b> 7WW2+H3C, Vicente Gullas St, Cebu City, 6000 Cebu
+                        <br>
+                        <br>
+                        <b>Operation hours:</b> 9am to 8pm
+                        <br>
+                        <br>
+                        <b>Budget:</b> PHP 160
+                    </p>
+            </div>
+
+            <div class="about-content8">
+
+                <img src="https://sugbo.ph/wp-content/uploads/2019/07/1makobarato-unli199-cebu.jpg">
+
+                <p><b>MAKO Barato Meals</b><br><br>Oh your trip to Cebu isn’t complete without trying the grilled meals and sea foods at Cebu’s . It’s a popular restaurant near the fort and has been visited by several Filipino personalities.
+                        <br>
+                        <br>
+                        <b>Address:</b> 7WR3+M9H, CSCR Tunnel, Cebu City, Cebu
+                        <br>
+                        <br>
+                        <b>Operation hours:</b> 10am to 9pm
+                        <br>
+                        <br>
+                        <b>Budget:</b> PHP 1,200 good for 15 persons
+                    </p>
+            </div>
+        </div>   
+
+        <div class="fort-map">
+            <h1>Magellan Cross Location</h1>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.5513112432234!2d123.90107693277307!3d10.293295235699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99be3db005c41%3A0x245ec23a1657e6fb!2sMagellan&#39;s%20Cross!5e1!3m2!1sen!2sph!4v1668469499352!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+<audio id="audio" src="../music/bossa.mp3" autoplay="true" loop></audio>
+
+</body>
+<!-- menu bar function -->
+<script type="text/javascript">
+    
+    let hamburger = document.getElementById("nav");
+
+    function openNav(){
+        hamburger.classList.add("nav-Open")
+    }
+    function closeNav(){
+        hamburger.classList.remove("nav-Open")
+    }
+
+</script>
+
+<!-- music backgreoun function -->
+
+<script type="text/javascript">
+    
+    function play(){
+
+     var music = new Audio('../music/bossa.mp3');
+     const song = document.querySelector('audio');
+
+     if (song.paused || song.ended) {
+     song.play();
+    }  else {
+    song.pause();
+    }
+  }
+
+
+</script>
+
+<script type="text/javascript">
+    
+//---- close the view port Start------//
+let close = document.getElementById("view");
+
+function closecont() {
+    close.classList.remove("view-open")
+}
+
+// ----close the view port end---//
+
+
+// Function to view the images 
+function img1() {
+
+    document.getElementById("magellan").src = "https://www.zenrooms.com/blog/wp-content/uploads/2021/08/magellans-cross-cebu.jpg";
+    view.classList.add("view-open")
+
+}
+function img2() {
+
+    document.getElementById("magellan").src = "https://www.freedomwall.net/files/2014/12/Shrine-of-Magellans-Cross.jpg";
+    view.classList.add("view-open")
+}
+function img3() {
+
+    document.getElementById("magellan").src = "https://www.kellscraft.com/WomansJourneyPhilippines/P1243248.JPG";
+    view.classList.add("view-open")
+}
+function img4() {
+
+    document.getElementById("magellan").src = "https://upload.wikimedia.org/wikipedia/commons/a/a5/20170812160609%21Magellan%27s_Cross_historical_marker.jpg";
+    view.classList.add("view-open")
+}
+function img5() {
+
+    document.getElementById("magellan").src = "https://cdn.theculturetrip.com/wp-content/uploads/2018/01/5753841923_87b7e25a25_b.jpg";
+    view.classList.add("view-open")
+}
+function img6() {
+
+    document.getElementById("magellan").src = "https://gohighbrow.com/wp-content/uploads/2016/04/5_0.jpg";
+    view.classList.add("view-open")
+}
+function img7() {
+
+    document.getElementById("magellan").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZTacVqkqWHk1jwWuieua0OKBj2lF8YdQPw&usqp=CAU";
+    view.classList.add("view-open")
+}
+function img8() {
+
+    document.getElementById("magellan").src = "https://media.istockphoto.com/id/1388166062/photo/magellans-cross-pavilion-in-plaza-sugbo-beside-the-basilica-del-santo-ni%C3%B1o.jpg?s=612x612&w=0&k=20&c=UuJp3Z8wOLBWX0ugCdHMHGshFQNrSTrrzFaqqltJEaQ=";
+    view.classList.add("view-open")
+}
+function img9() {
+
+    document.getElementById("magellan").src = "https://i.ebayimg.com/images/g/xdYAAOSwGzRhkSAG/s-l500.jpg";
+    view.classList.add("view-open")
+}
+
+</script>
+
+</html>
